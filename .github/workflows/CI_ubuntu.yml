@@ -28,6 +28,13 @@ jobs:
             compiler: gcc
             publish_artifact: true
             deploy_release: true
+          - name: "Ubuntu 18.04 [GCC-arm64]"
+            docker: "ubuntu-18.04"
+            arch: "arm64"
+            output-suffix: "ubuntu18.04-arm64"
+            compiler: gcc
+            publish_artifact: true
+            deploy_release: true
           - name: "Ubuntu 20.04 [GCC]"
             docker: "ubuntu-20.04"
             arch: "amd64"
